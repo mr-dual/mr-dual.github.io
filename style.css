@@ -1,0 +1,130 @@
+@font-face {
+  font-family: comfortaaregular;
+  src: url("./Fonts/comfortaa.woff") format("woff");
+}
+body{
+  font-family: comfortaaregular;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: 
+  radial-gradient(at 9% 89%, hsla(215,90%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 72% 6%, hsla(331,74%,64%,1) 0px, transparent 50%),
+  radial-gradient(at 14% 19%, hsla(14,90%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 65% 6%, hsla(6,79%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 10% 98%, hsla(316,72%,64%,1) 0px, transparent 50% ),
+  radial-gradient(at 44% 9%, hsla(40,96%,77%,1) 0px, transparent 50% ),
+  radial-gradient(at 10% 9%, hsla(76,65%,63%,1) 0px, transparent 50% );
+  background-color: #e9ff99;
+  min-height: 100vh;
+}
+.navigations{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 97%;
+  backdrop-filter: blur(10px);
+}
+.navigations nav{;
+  padding: 10px;
+  border-radius: 9999999999999999999999px;
+}
+.navigations a{
+  color: black;
+  text-decoration: none;
+}
+.navigations a:hover{
+  text-decoration: underline;
+}
+.po b{
+  color: cadetblue;
+  font-size: 40px;
+}
+.po{
+  font-size: 30px;
+  margin: 0 15px;
+  position: absolute;
+  left: 0;
+}
+.po a{
+    color: #045bc3fd;
+}
+.job{
+  font-size: 30px;
+  margin: 0;
+}
+.intro{
+  text-align: center;
+  margin: 7%;
+  padding: 30% 50px;
+  border-radius: 50px;
+  background: #00000050;
+  display: flex;
+  flex-direction: column;
+  animation: intro .5s 1.5s forwards;
+}
+.intro h3{
+  margin: 0;
+  padding: 0;
+}
+.name{
+  display: inline;
+  padding: 0 0 10px;
+}
+.greetings{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999999999999999999999999999;
+}
+.greetings h1{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: 
+  radial-gradient(at 9% 89%, hsla(215,90%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 72% 6%, hsla(331,74%,64%,1) 0px, transparent 50%),
+  radial-gradient(at 14% 19%, hsla(14,90%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 65% 6%, hsla(6,79%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 10% 98%, hsla(316,72%,64%,1) 0px, transparent 50% ),
+  radial-gradient(at 44% 9%, hsla(40,96%,77%,1) 0px, transparent 50% ),
+  radial-gradient(at 10% 9%, hsla(76,65%,63%,1) 0px, transparent 50% );
+  margin: 0;
+  background-color: #e9ff99;
+  animation: forwards greeting 1s 1.5s;
+}
+@keyframes greeting{
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes greeting2{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes intro{
+  0%{
+    transform: translateX(-30%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.contents{
+  padding: 10vh 0;
+}
